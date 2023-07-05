@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal App</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- add navbar -->
+    <nav id="nav">
+      <div id="left-nav">
+        <ul>
+            <li>
+              <h3 id="app_name">Meal App</h3>
+            </li>
+            <li>
+              <h3 id="home" onclick="home()">Home</h3>
+            </li>
+            <li>
+              <h3 id="favorite"  onclick="favorite()">Favorite</h3>
+            </li>
+        </ul>    
+      </div>
+      <div id="right-nav">
+        <ul>
+            <li>
+                <h3>Sign-up</h3>
+             </li>
+      
+            <li>
+                <h3>Sign-in</h3>
+            </li>
+         </ul>
+          
+      </div>
+    </nav>
+    <!-- display new container -->
+    <div id="new_container">
+      <!-- <nav>
+            <h3 id="app_name">Meal App</h3>
+            <h3 id="favorite">Favorite</h3>
+        </nav> -->
+    </div>
+    <!-- favorite list container -->
+    <div id="favorite_list">
+      <div class="favorite-heading">
+        <h1>Favorite List</h1>
+        <span>
+          <img onclick="clossFav()" src="https://t4.ftcdn.net/jpg/00/75/69/13/240_F_75691329_CLLuXHPb6zqvgBnFkQjVnufsLEtmbL3e.jpg"><span>
+        </div>
+        
+        <ul id="fav-list">
+        
+        </ul>
+    </div>
+    <!-- main container -->
+    <div id="container">
+      <div id="search_box">
+        <input id="input_box" type="text" placeholder="Type Here..." />
+        <img
+          id="search_icon"
+          alt="img"
+          src="https://cdn-icons-png.flaticon.com/128/149/149852.png"
+        />
+      </div>
+      <div id="suggestion"></div>
+      <div id="display_list">
+        <ul id="list">
+          <!-- <li class="list_box">
+                <img class="list_img" alt="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjAKGqrrQZFCNl7Z-hRsjf5hMVwC9LKi0zUqZHpAnkjw&s"/>
+               <div>
+
+               <div class="product_name">Pizza</div>
+
+                <div id="details">
+                    <button>Recipe</button>
+                    <img alt="img" src="https://media.istockphoto.com/id/1305618081/vector/vector-illustration-of-like-icon.jpg?s=170667a&w=0&k=20&c=ue54HPlGPQ0OJqG8yxtFTqGG-l_i_LzD_uBX5BEEPHA="/>
+                </div>
+                </div>
+            </li> -->
+        </ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
