@@ -67,10 +67,7 @@ nav{
   height: 92vh;
   overflow-y: scroll ;
 }
-/* new container section*/
-#new_container{
-  height: 92vh;
-}
+
 .Product_details_container{
   display:flex;
   /* background-color: red; */
